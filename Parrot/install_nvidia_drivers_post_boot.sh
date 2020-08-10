@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-#install drivers
+#Install drivers
 sudo apt update && sudo apt install nvidia-driver
 sudo apt install bumblebee-nvidia primus
 
-#no screen tearing when using Intel card
+#No screen tearing when using Intel card
 sudo cat >> /usr/share/X11/xorg.conf.d/20-intel.conf << EOL
 Section "Device"
 	Identifier "Intel Graphics"
@@ -13,7 +13,7 @@ Section "Device"
 EndSection
 EOL
 
-#next nvidia configuration file
+#Next nvidia configuration file
 sudo cat >> /etc/bumblebee/xorg.conf.nvidia << EOL
 Section "Screen"
 	Identifier "Default Screen"
@@ -21,10 +21,10 @@ Section "Screen"
 EndSection
 EOL
 
-#installing OpenCL driver to make your hashcat and any other GUI programm work
+#Installing OpenCL driver to make your hashcat and any other GUI programs work
 sudo apt install -y ocl-icd-libopencl1 nvidia-cuda-toolkit
 
-echo "Do you want to reebot now ?"
+echo "Do you want to reboot now [Y/n] ?"
 read inputs
 if [$inputs == "Y" || $inputs == "y"]; then
 	reboot
