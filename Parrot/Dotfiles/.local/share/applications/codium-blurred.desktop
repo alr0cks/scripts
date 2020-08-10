@@ -2,7 +2,7 @@
 Name=VSCodium (Blurred)
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
-Exec=/home/alr0cks/.config/plasma-blur.sh '/usr/share/codium/codium --no-sandbox --unity-launch %F' 'Codium' 3
+Exec=~/.config/plasma-blur.sh '/usr/share/codium/codium --no-sandbox --unity-launch %F' 'Codium' 3
 Icon=vscodium
 Type=Application
 StartupNotify=false

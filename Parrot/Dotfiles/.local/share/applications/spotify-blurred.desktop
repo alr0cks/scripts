@@ -2,7 +2,7 @@
 Categories=Audio;Music;Player;AudioVideo;
 Comment[en_IN]=
 Comment=
-Exec=/home/alr0cks/.config/plasma-blur.sh 'spotify %U' 'Spotify' 4
+Exec=~/.config/plasma-blur.sh 'spotify %U' 'Spotify' 4
 GenericName[en_IN]=Music Player
 GenericName=Music Player
 Icon=spotify-client
