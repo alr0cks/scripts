@@ -1,3 +1,3 @@
 # scripts
 
-## Some of my custom scripts
+## Some of my random scripts
