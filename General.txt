@@ -1,0 +1,1 @@
+$xprop WM_CLASS    //For plasma-blur.sh 
