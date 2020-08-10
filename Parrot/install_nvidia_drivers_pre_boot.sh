@@ -10,7 +10,7 @@ alias lbm-nouveau off
 EOL
 
 
-echo "Do you want to reebot now ?"
+echo "Do you want to reboot now ?"
 read inputs
 if [$inputs == "Y" || $inputs == "y"]; then
 	reboot
